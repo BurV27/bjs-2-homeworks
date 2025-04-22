@@ -11,7 +11,7 @@ function solveEquation(a, b, c) {
 	} else {
 		arr = []
 	}
-	return console.log(arr);
+	return arr;
 }
 
 
@@ -20,5 +20,5 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let bodyCredit = amount - contribution;
 	let payment = bodyCredit * (transformPercent + (transformPercent / ((Math.pow((1 + transformPercent), countMonths) - 1))));
 	let totalAmount = payment * countMonths
-	return console.log(totalAmount.toFixed(2))
+	return totalAmount.toFixed(2)
 }
